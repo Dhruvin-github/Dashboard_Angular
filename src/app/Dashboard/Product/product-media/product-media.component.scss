@@ -1,0 +1,102 @@
+
+.table-header{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+   align-items: center;
+   text-align: center;
+  background-color: #575757;
+  border-radius: 15px 15px 0px 0px;
+  color: #fff;
+}
+
+.table-body{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+   align-items: center;
+   text-align: center;
+   border:1px solid black;
+   border-top: none;
+   background-color: 	#ffb6c1
+
+}
+
+.table-body:last-child{
+  border-radius: 0px 0px 15px 15px;
+}
+
+.table-row{
+  align-self: center;
+  justify-content: space-around;
+}
+
+.chehehe{
+  align-self: center;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #FF3D65;
+  width: 1.50em;
+  height: 1.50em;
+  border: 0.20em solid #FF3D65;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: inline-grid;
+  place-content: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #FF3D65;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.arrow-icon {
+  font-size: 1.50em;
+  color:#2C8CEC;
+  cursor: pointer;
+}
+
+.delete-icon{
+  font-size: 1.5em;
+  // color:#FF3D65;
+  color:red;
+  cursor: pointer;
+}
+
+.image-div{
+ height: 150px;
+ width: 150px;
+}
+
+.table-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
