@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *{
   list-style: none;
@@ -5,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sidebar{
@@ -51,4 +53,265 @@
 // , .sidebar ul li a.active:before
 {
      display: block;
+}
+=======
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
+  //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.125);
+  padding: 30px;
+  height: auto;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ff3d65;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Times New Roman";
+}
+
+.wrapper .form {
+  width: 100%;
+}
+
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  height: 130px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+.custom_select {
+  background-color: #fff;
+}
+// .wrapper .form .inputfield .input:focus,
+// .wrapper .form .inputfield .textarea:focus,
+// .wrapper .form .inputfield .custom_select select:focus .label .custom_select {
+//   // border: 1px solid #ff3d65;
+//   //font-size: 18px;
+// }
+
+.wrapper .form .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+.wrapper .form .inputfield .check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper .form .inputfield .check .checkmark:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.wrapper .form .inputfield .btn {
+  margin-top: 14px;
+  width: 100%;
+  margin-left: auto;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #ff3d65;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  //display: center;
+}
+
+.wrapper .form .inputfield .btn:hover {
+  background: #fff;
+  border: 2px solid;
+  color: #ff3d65;
+  //font-size: 17px;
+}
+
+.labelstatus {
+  color: #757575;
+  font-size: 17px;
+}
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #ff3d65;
+  padding: 6px 20px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media (max-width: 420px) {
+  .wrapper .form .inputfield {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label {
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms {
+    flex-direction: row;
+  }
+}
+
+/* (A) HIDE DEFAULT CHECKBOX */
+.toggle input {
+  display: none;
+}
+
+/* (B) TOGGLE BUTTON WRAPPER */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* (C) CUSTOM TOGGLE BUTTON "OUTSIDE BOX" */
+.slider {
+  /* (C1) FULLY FILL  CONTAINER */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* (C2) COSMETIC STYLES */
+  cursor: pointer;
+  border: 2px solid #776b6b;
+  background-color: #5c5353;
+  border-radius: 15px;
+}
+
+/* (D) CUSTOM TOGGLE BUTTON "INSIDE SLIDER BUTTON" */
+.slider::before {
+  /* (D1) FILL UP HALF OF  CONTAINER */
+  content: "";
+  width: 50%;
+  height: 100%;
+  /* (D2) DEFAULT BUTTON POSITION - LEFT */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* (D3) COSMETIC STYLES */
+  background-color: white;
+  border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* (E) ON CHECKED (SWITCHED ON) */
+/* (E1) MAGIC CSS SLIDING ANIMATION */
+.slider,
+.slider::before {
+  transition: all 0.2s;
+}
+/* (E2) TURN GREEN */
+.toggle input:checked + .slider {
+  border: 2px solid #ff3d65;
+  background-color: #ff3d65;
+  border-radius: 15px;
+}
+/* (E3) MOVE SLIDER BUTTON TO RIGHT */
+.toggle input:checked + .slider::before {
+  left: 50%;
+>>>>>>> origin/Dashboard_Hiren
 }
