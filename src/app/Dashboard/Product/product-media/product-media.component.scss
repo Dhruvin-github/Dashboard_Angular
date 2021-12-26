@@ -1,3 +1,57 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar{
+  background: rgb(5, 68, 104);
+  top:0;
+  left:0;
+  height: 100vh;
+  //position:fixed;
+}
+
+.sidebar ul li a{
+  display: block;
+   padding: 13px 30px;
+   border-bottom: 1px solid #10558d;
+   color: rgb(241, 237, 237);
+   font-size: 16px;
+   position: relative;
+   transition: all 0.4s ease;
+}
+
+  .sidebar ul li a .icon{
+   color: #dee4ec;
+   width: 30px;
+   display: inline-block;
+ }
+
+ .sidebar ul li a:hover
+  //,.sidebar ul li a.active
+  {
+     color: #0c7db1;
+
+     background:white;
+     border-right: 2px solid rgb(5, 68, 104);
+ }
+
+ .sidebar ul li a:hover .icon
+// ,.sidebar ul li a.active .icon
+{
+     color: #0c7db1;
+ }
+
+ .sidebar ul li a:hover:before
+
+// , .sidebar ul li a.active:before
+{
+     display: block;
+}
+
 
 .table-header{
   display: flex;
@@ -18,7 +72,6 @@
    text-align: center;
    border:1px solid black;
    border-top: none;
-   background-color: 	#ffb6c1
 
 }
 
@@ -70,21 +123,32 @@ input[type="checkbox"]:checked::before {
 }
 
 .arrow-icon {
-  font-size: 1.50em;
+  font-size: 2em;
   color:#2C8CEC;
   cursor: pointer;
+  transition: 0.15s;
+}
+
+.arrow-icon:hover{
+  font-size: 2.5em;
 }
 
 .delete-icon{
-  font-size: 1.5em;
+  font-size: 2em;
   // color:#FF3D65;
   color:red;
   cursor: pointer;
+  transition: 0.15s;
+}
+
+.delete-icon:hover{
+  font-size: 2.5em;
 }
 
 .image-div{
- height: 150px;
- width: 150px;
+ height:150px;
+ width: 100%;
+
 }
 
 .table-image{
@@ -93,6 +157,48 @@ input[type="checkbox"]:checked::before {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.image-input-button{
+  -webkit-appearance: none;
+  background-color: transparent;
+  color:#FF3D65;
+  border:2px solid #FF3D65 !important;
+  border-radius: 12px;
+  width: 170px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.image-input-button:hover{
+  background-color: #FF3D65;
+  color: #fff;
+  border:none;
+}
+
+.upload-image-form{
+display: flex;
+flex-direction: row;
+}
+
+input[type=file]
+{
+  width: 30%;
+  border:0.5px solid #575757;
+  border-radius: 12px;
+}
+input[type=file]::file-selector-button {
+  //border-top:1px solid #575757;
+  //border:1px solid #575757;
+  padding:10px;
+  background-color: #575757;
+  color:#fff;
+  border-radius: 12px;
+  width: 170px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+
 
 
 

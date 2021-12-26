@@ -10,6 +10,18 @@ export class ProductMediaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.imageSelected();
+  }
+
+  imageSelected(){
+    var file = document.getElementById("imageUpload");
+    if(file != null){
+      console.log(file);
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 
 }

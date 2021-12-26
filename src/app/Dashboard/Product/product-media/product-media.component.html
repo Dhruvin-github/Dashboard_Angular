@@ -1,22 +1,64 @@
 
 <div class="contailer-fluid">
   <div class="row">
-    <div class="col-sm-4">
+
+    <!-- Sidebar Section -->
+
+    <div class="col-sm-2 sidebar">
+
+      <ul>
+        <li>
+          <a href="" class="active">
+            <span class="icon"><i class="fa fa-info"></i></span>
+            <span class="item">Product Details</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="" class="active">
+            <span class="icon"><i class="fa fa-picture-o"></i></span>
+            <span class="item">Product Media</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="" class="active">
+            <span class="icon"><i class="fa fa-info"></i></span>
+            <span class="item">Product Details</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="" class="active">
+            <span class="icon"><i class="fa fa-picture-o"></i></span>
+            <span class="item">Product Media</span>
+          </a>
+        </li>
+
+      </ul>
 
     </div>
-    <div class="col-sm-8 p-3 Image-Section">
+
+
+      <!-- Main Product Media Section -->
+
+    <div class="col-sm-10 px-5 mb-5 Image-Section">
 
       <!-- Choose file section -->
 
-      <div class="choose-file-section"></div>
+      <div class="py-4 row choose-file-section">
+          <form action="" class="upload-image-form">
+                <input type="file" name="imageUpload" id="imageUpload">
+                <input type="submit" value="Add Image" class=" mx-3 image-input-button">
+          </form>
+      </div>
 
       <!-- Image-Table Section -->
 
       <div class="image-table">
         <div class="py-3 table-header">
-          <div class="col-sm-1 table-row">ID</div>
           <div class="col-sm-2 table-row">Image</div>
-          <div class="col-sm-3 table-row">Label</div>
+          <div class="col-sm-2 table-row">Label</div>
           <div class="col-sm-1 table-row">Base</div>
           <div class="col-sm-1 table-row">Small</div>
           <div class="col-sm-1 table-row">Thumbnail</div>
@@ -27,13 +69,12 @@
 
 
         <div class="py-3 table-body">
-          <div class="col-sm-1 table-row">01</div>
-          <div class="col-sm-2 table-row">
-            <div class="image-div">
-              <img src="https://picsum.photos/200/300" alt="" class="table-image" />
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
             </div>
           </div>
-          <div class="col-sm-3 table-row">Image-1</div>
+          <div class="col-sm-2 table-row">Image-1</div>
           <div class="col-sm-1 table-row ">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" >
           </div>
@@ -51,15 +92,13 @@
         </div>
 
 
-
         <div class="py-3 table-body">
-          <div class="col-sm-1 table-row">01</div>
-          <div class="col-sm-2 table-row">
-            <div class="image-div">
-              <img src="https://picsum.photos/200/300" alt="" class="table-image" />
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
             </div>
           </div>
-          <div class="col-sm-3 table-row">Image-1</div>
+          <div class="col-sm-2 table-row">Image-1</div>
           <div class="col-sm-1 table-row ">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" >
           </div>
@@ -72,24 +111,21 @@
           <div class="col-sm-1 table-row">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" checked>
           </div>
-          <div class="col-sm-1 table-row"><i class="fa fa-arrow-up arrow-icon"></i></div>
+          <!-- <div class="col-sm-1 table-row"><i class="fa fa-arrow-up arrow-icon"></i></div> -->
+          <div class="col-sm-1 table-row"><i class="fa fa-upload arrow-icon"></i></div>
           <div class="col-sm-1 table-row"><i class="fa fa-trash delete-icon"></i></div>
         </div>
 
 
 
 
-
-
-
         <div class="py-3 table-body">
-          <div class="col-sm-1 table-row">01</div>
-          <div class="col-sm-2 table-row">
-            <div class="image-div">
-              <img src="https://picsum.photos/200/300" alt="" class="table-image" />
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
             </div>
           </div>
-          <div class="col-sm-3 table-row">Image-1</div>
+          <div class="col-sm-2 table-row">Image-1</div>
           <div class="col-sm-1 table-row ">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" >
           </div>
@@ -102,7 +138,7 @@
           <div class="col-sm-1 table-row">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" checked>
           </div>
-          <div class="col-sm-1 table-row"><i class="fa fa-arrow-up arrow-icon"></i></div>
+          <div class="col-sm-1 table-row"><i class="fa fa-edit arrow-icon"></i></div>
           <div class="col-sm-1 table-row"><i class="fa fa-trash delete-icon"></i></div>
         </div>
 
@@ -113,13 +149,40 @@
 
 
         <div class="py-3 table-body">
-          <div class="col-sm-1 table-row">01</div>
-          <div class="col-sm-2 table-row">
-            <div class="image-div">
-              <img src="https://picsum.photos/200/300" alt="" class="table-image" />
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
             </div>
           </div>
-          <div class="col-sm-3 table-row">Image-1</div>
+          <div class="col-sm-2 table-row">Image-1</div>
+          <div class="col-sm-1 table-row ">
+            <input type="checkbox" name="base" class="regular-checkbox" id="base" >
+          </div>
+          <div class="col-sm-1 table-row">
+            <input type="checkbox" name="base" class="regular-checkbox" id="base">
+          </div>
+          <div class="col-sm-1 table-row ">
+            <input type="checkbox" name="base" class="regular-checkbox" id="base">
+          </div>
+          <div class="col-sm-1 table-row">
+            <input type="checkbox" name="base" class="regular-checkbox" id="base" checked>
+          </div>
+          <div class="col-sm-1 table-row"><i class="fas fa-arrow-alt-to-top arrow-icon"></i></div>
+          <div class="col-sm-1 table-row"><i class="fa fa-trash delete-icon"></i></div>
+        </div>
+
+
+
+
+
+
+        <div class="py-3 table-body">
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
+            </div>
+          </div>
+          <div class="col-sm-2 table-row">Image-1</div>
           <div class="col-sm-1 table-row ">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" >
           </div>
@@ -142,13 +205,12 @@
 
 
         <div class="py-3 table-body">
-          <div class="col-sm-1 table-row">01</div>
-          <div class="col-sm-2 table-row">
-            <div class="image-div">
-              <img src="https://picsum.photos/200/300" alt="" class="table-image" />
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
             </div>
           </div>
-          <div class="col-sm-3 table-row">Image-1</div>
+          <div class="col-sm-2 table-row">Image-1</div>
           <div class="col-sm-1 table-row ">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" >
           </div>
@@ -164,21 +226,18 @@
           <div class="col-sm-1 table-row"><i class="fa fa-arrow-up arrow-icon"></i></div>
           <div class="col-sm-1 table-row"><i class="fa fa-trash delete-icon"></i></div>
         </div>
-
-
 
 
 
 
 
         <div class="py-3 table-body">
-          <div class="col-sm-1 table-row">01</div>
-          <div class="col-sm-2 table-row">
-            <div class="image-div">
-              <img src="https://picsum.photos/200/300" alt="" class="table-image" />
+          <div class="col-sm-2 table-row ">
+            <div class="ps-4 image-div">
+              <img src="https://picsum.photos/500/800" alt="" class="table-image" />
             </div>
           </div>
-          <div class="col-sm-3 table-row">Image-1</div>
+          <div class="col-sm-2 table-row">Image-1</div>
           <div class="col-sm-1 table-row ">
             <input type="checkbox" name="base" class="regular-checkbox" id="base" >
           </div>
@@ -194,6 +253,7 @@
           <div class="col-sm-1 table-row"><i class="fa fa-arrow-up arrow-icon"></i></div>
           <div class="col-sm-1 table-row"><i class="fa fa-trash delete-icon"></i></div>
         </div>
+
 
 
       </div>
